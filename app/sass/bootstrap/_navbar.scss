@@ -1,0 +1,64 @@
+.navbar {
+  position: relative;
+  padding: $navbar-padding-y 0;
+  $max:$grid-mobile;
+  $min:$grid-mobile - 1;
+  @media (max-width: $max) {}
+  @media (min-width: $min) {
+    .navbar-collapse {
+      display: block;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+    .nav-item {
+      display: inline-block;
+    }
+    .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+    .navbar-toggler {
+      display: none;
+    }
+  }
+}
+
+.navbar-toggler {
+  width: 2.5em;
+  height: 2em;
+  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  font-size: $navbar-toggler-font-size;
+  line-height: $line-height-sm;
+  background: $navbar-white-toggler-bg no-repeat center center;
+  background-size: 24px 24px;
+  border: $border-width solid $navbar-white-toggler-border;
+  @include border-radius($navbar-toggler-border-radius);
+}
+
+.navbar-nav {
+  @extend .list-unstyled;
+  display: block;
+}
+.nav-item {
+  display: block;
+}
+.nav-link {
+  display: block;
+  padding-top: .425rem;
+  padding-bottom: .425rem;
+  color: $navbar-white-color;
+  &:hover {
+    color: $navbar-white-hover-color;
+    text-decoration: none;
+  }
+}
+
+.show > .nav-link,
+.active > .nav-link,
+.nav-link.show,
+.nav-link.active {
+  color: $navbar-white-active-color;
+}

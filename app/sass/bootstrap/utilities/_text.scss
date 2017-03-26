@@ -1,0 +1,37 @@
+
+/* Text utilities */
+.text-justify  { text-align: justify !important; }
+.text-nowrap   { white-space: nowrap !important; }
+.text-truncate { @include text-truncate; }
+.text-uppercase  { text-transform: uppercase; }
+// Responsive alignment
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-left   { text-align: left !important; }
+    .text#{$infix}-right  { text-align: right !important; }
+    .text#{$infix}-center { text-align: center !important; }
+  }
+}
+
+// Contextual colors
+
+@include text-emphasis-variant('.text-muted', $text-muted);
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+
+@include text-emphasis-variant('.text-success', $brand-success);
+
+@include text-emphasis-variant('.text-info', $brand-info);
+
+@include text-emphasis-variant('.text-warning', $brand-warning);
+
+@include text-emphasis-variant('.text-danger', $brand-danger);
+
+@include text-emphasis-variant('.text-white', $white);
+
+@include text-emphasis-variant('.text-black', $black);
+
+@include text-emphasis-variant('.text-red', $red);
+

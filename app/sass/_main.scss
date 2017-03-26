@@ -1,0 +1,12 @@
+// использовать нужно в каждом файле, тоесть если пишешь стили в файле header.scss
+// то в конце файла добавляешь медиа для адаптивности
+// чтобы было понятно где искать стили отвечающие за адаптив шапки
+@media (max-width: $grid-sm-down) {}
+@media (max-width: $grid-md-down) {}
+@media (max-width: $grid-lg-down) {}
+@media (max-width: $grid-xl-down) {}
+
+@media (min-width: $grid-sm-up) {}
+@media (min-width: $grid-md-up) {}
+@media (min-width: $grid-lg-up) {}
+@media (min-width: $grid-xl-up) {}

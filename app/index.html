@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/libs.css" />
+</head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar">
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#!">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" data-toggle="modal" data-target="#myModal">modal</a>
+              </li>
+            </ul>
+          </div>
+          <!-- navbar -->
+        </div>
+        <!-- container -->
+      </nav>
+    </header>
+    <main id="main">
+      <div class="container content">
+        <h1>include file stat.html</h1>
+        <article class="mb-40">
+          <header>
+            <h2>The Great Gatsby</h2>
+            <p>F. Scott Fitzgerald</p>
+          </header>
+          <h3>Chapter 1</h3>
+          <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+          <p>"Whenever you feel like criticizing any one," he told me, "just remember that all the people in this world haven't had the advantages that you've had."</p>
+          <p>He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that. In consequence, I'm inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores. The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician, because I was privy to the secret griefs of wild, unknown men. Most of the confidences were unsought &mdash; frequently I have feigned sleep, preoccupation, or a hostile levity when I realized by some unmistakable sign that an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at least the terms in which they express them, are usually plagiaristic and marred by obvious suppressions. Reserving judgments is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth.</p>
+        </article>
+        <h2>Other Elements</h2>
+        <h4>Quotes</h4>
+        <figure>
+          <blockquote>
+            <q>Nothing is particularly hard if you divide it into small jobs.</q>
+          </blockquote>
+          <figcaption>Henry Ford</figcaption>
+        </figure>
+        <figure>
+          <blockquote>
+            <q>It is during our darkest moments that we must focus to see the light.</q>
+          </blockquote>
+          <figcaption>Aristotle</figcaption>
+        </figure>
+        <figure>
+          <blockquote>
+            <q>Unattributed quote.</q>
+          </blockquote>
+        </figure>
+      
+        <h5>Numbered List</h5>
+        <ol>
+          <li>You're like a dream come true</li>
+          <li>Just wanna be with you</li>
+          <li>Girl it's plain to see that you're the onlly one for me and</li>
+          <li>Repeat steps 1 through 3</li>
+          <li>Make you fall in love with me</li>
+        </ol>
+      
+        <h6>Unordered list:</h6>
+        <ul>
+          <li>Be succinct</li>
+          <li>Be bold</li>
+          <li>Be kind</li>
+        </ul>
+      </div>
+    </main>
+    <!--main-->
+    <footer id="footer">
+      <div class="container">
+        <span class="text-black">Place sticky footer content here.</span>
+      </div>
+    </footer>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+      <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.transition {
+  @include transition($transition-base);
+}
+.fade {
+  opacity: 0;
+  @include transition($transition-fade);
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+}

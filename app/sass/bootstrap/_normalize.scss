@@ -1,0 +1,359 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: $font-size-root;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  height: 100%;
+}
+*,*::before,*::after {box-sizing: inherit;}
+html {
+  @media (min-width: $grid-sm-up) {
+    font-size: $font-size-root-sm;
+  }
+  @media (min-width: $grid-md-up) {
+    font-size: $font-size-root-md;
+  }
+  @media (min-width: $grid-lg-up) {
+    font-size: $font-size-root-lg;
+  }
+  @media (min-width: $grid-xl-up) {
+    font-size: $font-size-root-xl;
+  }
+
+}
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+main {
+  flex: 1 0 auto;
+}
+article,aside,footer,header,nav,section,figcaption,figure,main {display: block;}
+figure,p {margin: 0;}
+hr {
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
+}
+pre {
+  font-family: monospace, monospace; // 1
+  font-size: 1em; // 2
+}
+
+a {
+  background-color: transparent; // 1
+  -webkit-text-decoration-skip: objects; // 2
+  color: $link-color;
+  text-decoration: $link-decoration;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    @include tab-focus();
+  }
+}
+
+
+abbr[title] {
+  border-bottom: none; // 1
+  text-decoration: underline; // 2
+  text-decoration: underline dotted; // 2
+}
+
+b,strong {font-weight: bolder;}
+
+code,kbd,samp {
+  font-family: monospace, monospace; // 1
+  font-size: 1rem; // 2
+}
+
+dfn {font-style: italic;}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input { // 1
+  overflow: visible;
+}
+
+button,
+select { // 1
+  text-transform: none;
+}
+
+button,
+html [type="button"], // 1
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; // 2
+  &::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+}
+
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  @include tab-focus();
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  box-sizing: border-box; // 1
+  color: inherit; // 2
+  display: table; // 1
+  max-width: 100%; // 1
+  padding: 0; // 3
+  white-space: normal; // 1
+}
+
+progress {
+  display: inline-block; // 1
+  vertical-align: baseline; // 2
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; // 1
+  padding: 0; // 2
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; // 1
+  outline-offset:0; // 2
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; // 1
+  font: inherit; // 2
+}
+
+details, // 1
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+input[placeholder] {
+  text-overflow:ellipsis;
+}
+
+input::-webkit-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+input::-moz-placeholder {
+  color: $input-color-placeholder !important;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+textarea::-webkit-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+textarea::-moz-placeholder {
+  color: $input-color-placeholder !important;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+[tabindex="-1"]:focus {
+  @include tab-focus();
+}
+
+abbr[title],abbr[data-original-title] {
+  cursor: help;
+}
+
+address {
+  margin: 0;
+  font-style: normal;
+  line-height: inherit;
+}
+blockquote,
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+
+[role="button"] {
+  cursor: pointer;
+}
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+}
+
+// Work around a Firefox/IE bug where the transparent `button` background
+// results in a loss of the default `button` focus styles.
+//
+// Credit: https://github.com/suitcss/base/
+button:focus {
+  @include tab-focus();
+}
+
+input,
+button,
+select,
+textarea {
+  line-height: inherit;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  resize: vertical;
+}
