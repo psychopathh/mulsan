@@ -5,13 +5,13 @@
 
 `Install git https://git-scm.com/download/win`
 
-`Install gulp: npm install --global gulp-cli`
+`Install gulp: npm install --global gulp`
 
 `Install bower: npm install -g bower`
 
 ### Instal project
 
-`git clone https://github.com/Wordpost/start_html.git`
+`git clone https://github.com/Wordpost/mulsan.git`
 
 `npm i`
 

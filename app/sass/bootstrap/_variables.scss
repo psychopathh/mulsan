@@ -100,8 +100,11 @@ $black:       #000 !default;
 $red:         #d9534f !default;
 $orange:      #f0ad4e !default;
 $yellow:      #ffd500 !default;
-$green:       #5cb85c !default;
-$blue:        #0275d8 !default;
+
+$green:       #3adb35 !default;
+$green-light:       #c1fb06 !default;
+$blue:        #00c3ff !default;
+
 $teal:        #5bc0de !default; // изумрудный
 $pink:        #ff5b77 !default;
 $purple:      #613d7c !default; // фиолетовый
@@ -192,7 +195,7 @@ $border-width: 1px !default;
 // Settings for the `<body>` element.
 
 $body-bg:       $white !default;
-$body-color:    $black !default;
+$body-color:    #333 !default;
 $inverse-bg:    $black !default;
 $inverse-color: $gray !default;
 
@@ -247,7 +250,7 @@ $grid-xl-down: $grid-xl - 1;
 $container-sm: 540px;
 $container-md: 720px;
 $container-lg: 960px;
-$container-xl: 1140px;
+$container-xl: 1170px;
 $container-max-widths: (
   sm: $container-sm,
   md: $container-md,
@@ -272,15 +275,15 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: 'Open Sans Condensed', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:    12px !default;
-$font-size-root-sm: 13px !default;
-$font-size-root-md: 14px !default;
+$font-size-root:    13px !default;
+$font-size-root-sm: 14px !default;
+$font-size-root-md: 15px !default;
 $font-size-root-lg: 15px !default;
 $font-size-root-xl: 16px !default;
 

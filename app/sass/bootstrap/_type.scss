@@ -25,7 +25,12 @@ small,
   font-size: $small-font-size;
   font-weight: $font-weight-normal;
 }
-
+.fira-m{
+  font-family: 'Conv_FiraSans-Medium';
+}
+.fira-l{
+  font-family: 'Conv_FiraSans-Light';
+}
 .list-unstyled {
   @include list-unstyled;
 }
