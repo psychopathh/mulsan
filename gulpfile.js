@@ -70,6 +70,7 @@ var gulp        = require('gulp'),              // Подключаем Gulp
       'app/js/fancyBox-3.0/thumbs.js',
       // bootstrap full
       'app/js/bootstrap.js',
+      'app/libs/owl.carousel/dist/owl.carousel.js'
     ])
       .pipe(concat('libs.min.js'))  // Собираем их в кучу в новом файле libs.min.js
       .pipe(uglifyjs()) // Сжимаем JS файл
